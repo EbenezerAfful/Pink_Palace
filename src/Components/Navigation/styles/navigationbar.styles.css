@@ -1,0 +1,56 @@
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: deeppink;
+    padding: 20px 80px;
+    box-shadow:0 5px 15px rgb(rgb(0, 0, 0), rgb(0, 0, 0), rgb(248, 248, 249))
+
+}
+
+.header{color: aliceblue;
+align-items: center;
+display: flex;
+font-family: "Sacramento", cursive;
+font-size: 60px;}
+
+.nav-bar-links{
+    justify-content: space-between;
+    display: flex;
+    color: aliceblue;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.nav-links li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: aliceblue;
+    transition: 0.3s ease-in-out;
+
+}
+
+.nav-links li a:hover{
+    color: #000;
+}
+
+.nav-links li a:hover::after{
+    content: "";
+    width: 30px;
+    height: 2px;
+    background: #000;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
