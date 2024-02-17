@@ -1,5 +1,6 @@
 .nav-bar{
     display: flex;
+    margin-top: auto;
     align-items: center;
     justify-content: space-between;
     background-color: deeppink;
@@ -54,3 +55,4 @@ font-size: 60px;}
     bottom: -4px;
     left: 20px;
 }
+
