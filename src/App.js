@@ -1,11 +1,17 @@
 import './App.css';
-import NavigationBar from './Components/Navigation/navigationbar.component';
-
-
+import { Route, Routes } from "react-router-dom";
+import Home from './Components/Home/home.component'
+import BasicSlider from './Components/Home/basicslider';
 const App=()=> {
   return (
     <div className="App">
-   <NavigationBar/>
+   <Routes>
+    <Route path='/' element={<Home/>}/>
+      <Route path='/home' element={<BasicSlider/>}>
+    </Route>
+</Routes>
+
+  
     </div>
   );
 }

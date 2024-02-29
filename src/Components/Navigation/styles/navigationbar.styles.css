@@ -10,10 +10,13 @@
 }
 
 .header{color: aliceblue;
-align-items: center;
-display: flex;
 font-family: "Sacramento", cursive;
-font-size: 60px;}
+font-size: 60px;
+font-weight: 60;
+}
+
+
+
 
 .nav-bar-links{
     justify-content: space-between;
@@ -54,5 +57,9 @@ font-size: 60px;}
     position: absolute;
     bottom: -4px;
     left: 20px;
+}
+
+.slider-container{
+    justify-content: center;
 }
 

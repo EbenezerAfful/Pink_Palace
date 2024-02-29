@@ -4,7 +4,7 @@ import './styles/navigationbar.styles.css'
 const NavigationBar=()=>{
     return(<div className='nav-bar'>
     <SpectacleIcon className='spectacle-styles'/>
-<div className='header'> Pink Palace</div>
+<div className='header'>Pink Palace</div>
     <div className='nav-bar-links'>
        <ul className='nav-links'>
        <li><a href='index.html'>Home</a></li>
