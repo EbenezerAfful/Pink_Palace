@@ -1,6 +1,8 @@
+import BasicSlider from "./basicslider";
+
 const Home=()=>{
     return( <div>
-        i am home page
+    <BasicSlider/>
     </div>    
     )
 }

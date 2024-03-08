@@ -2,9 +2,12 @@ import React from "react";
 import HeroSlider,{Slide} from  'hero-slider'
 import '../../images/sunset-1283872_640.jpg'
 import '../Navigation/styles/navigationbar.styles.css'
+import REACTLOGO from '../../images/sunset-1283872_640.jpg'
+import REACTLOGO1 from '../../images/sunset-1283872_640.jpg'
 
-const Image1 ='https://i.imgur.com/Gu5Cznz.jpg'
-const Image2 = 'https://i.imgur.com/8DYumaY.jpg'
+
+const Image1 = REACTLOGO
+const Image2 = REACTLOGO1
 
 
 const BasicSlider=()=>{
@@ -32,7 +35,7 @@ const BasicSlider=()=>{
             <Slide
             background={{
                 backgroundImage: `url(${Image1})`,
-                backgroundAttachment:"fixed",
+                backgroundAttachment:"absolute",
                 
 
             }}

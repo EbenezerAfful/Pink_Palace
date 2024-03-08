@@ -1,0 +1,18 @@
+.image-styles{
+  position: absolute;
+  top:10%;
+  justify-content: space-between;
+  display: flex;
+}
+
+.container{
+    justify-content: space-between;
+    display: flex;
+    
+}
+
+
+.image-container{
+    justify-content: space-between;
+    display: flex;
+}
