@@ -1,3 +1,10 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+
+
 .nav-bar{
     display: flex;
     margin-top: auto;
@@ -11,9 +18,16 @@
 
 .upper-bar{
     width: 100%;
-    height: 60px;
+    height: 40px;
     color:white;
     background-color: deeppink;
+    display: flex;
+    position: relative;
+    
+    
+    
+    
+
 } 
 
 .header{color: deeppink;
@@ -81,3 +95,53 @@ left: 30.0rem;
     right: 65px;
     
 }
+
+
+.upper-container{  
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    left: 1%;
+    position:absolute;
+
+    
+
+}
+
+
+    .upper-container li{
+        list-style: none;
+        justify-content: space-between;
+   
+    }
+    
+
+    .upper-container-right{  
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        right: 5%;
+        bottom: 10%;
+        
+        
+        
+    
+    }
+    
+    
+    .upper-container-right li{
+            list-style: none;
+            justify-content: space-between;
+       
+        }
+        
+
+
+
+
+
+
+  
+
+
+        

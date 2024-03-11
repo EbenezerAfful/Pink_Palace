@@ -1,52 +1,112 @@
 import React from "react";
-import HeroSlider,{Slide} from  'hero-slider'
 import '../../images/sunset-1283872_640.jpg'
 import '../Navigation/styles/navigationbar.styles.css'
-import REACTLOGO from '../../images/sunset-1283872_640.jpg'
-import REACTLOGO1 from '../../images/sunset-1283872_640.jpg'
-
-
-const Image1 = REACTLOGO
-const Image2 = REACTLOGO1
-
 
 const BasicSlider=()=>{
-    return(<div className="slider-container">
-        <HeroSlider
-        slidingAnimation="left_to_right"
-        orientation='horizontal'
-        initialSlide ={1}
-        onBeforeChange={(previousSlide,nextSlide)=>console.log('onBeforeChange',previousSlide,nextSlide)}
-        onChange={nextSlide=>console.log('onchange',nextSlide)}
-        onAfterChange={nextSlide=>console.log('onAfterchange',nextSlide)}
-        style={{background:'rgba(0,0,0.33)'}}
-        settings={{
-            slidingDuration:250,
-            slidingDelay:180,
-            shouldAutoplay:true,
-            shouldDisplayButtons:true,
-            autoplayDuration:5000,
-            
-            
-            
+const slides = document.querySelectorAll('.slide');
+const next = document.querySelector('#next');
+const prev = document.querySelector('#prev');
+const auto = true; // Auto scroll
+const intervalTime = 5000;
+let slideInterval;
 
-        }}
-        >
-            <Slide
-            background={{
-                backgroundImage: `url(${Image1})`,
-                backgroundAttachment:"absolute",
-                
+const nextSlide = () => {
+  // Get current class
+  const current = document.querySelector('.current');
+  // Remove current class
+  current.classList.remove('current');
+  // Check for next slide
+  if (current.nextElementSibling) {
+    // Add current to next sibling
+    current.nextElementSibling.classList.add('current');
+  } else {
+    // Add current to start
+    slides[0].classList.add('current');
+  }
+  setTimeout(() => current.classList.remove('current'));
+};
 
-            }}
-            />
-            <Slide
-            background={{
-                backgroundImage: `url(${Image2})`,
-                backgroundAttachment:"fixed"
-            }}
-            />
-        </HeroSlider>
+const prevSlide = () => {
+  // Get current class
+  const current = document.querySelector('.current');
+  // Remove current class
+  current.classList.remove('current');
+  // Check for prev slide
+  if (current.previousElementSibling) {
+    // Add current to prev sibling
+    current.previousElementSibling.classList.add('current');
+  } else {
+    // Add current to last
+    slides[slides.length - 1].classList.add('current');
+  }
+  setTimeout(() => current.classList.remove('current'));
+};
+
+// Button events
+next.addEventListener('click', e => {
+  nextSlide();
+  if (auto) {
+    clearInterval(slideInterval);
+    slideInterval = setInterval(nextSlide, intervalTime);
+  }
+});
+
+prev.addEventListener('click', e => {
+  prevSlide();
+  if (auto) {
+    clearInterval(slideInterval);
+    slideInterval = setInterval(nextSlide, intervalTime);
+  }
+});
+
+// Auto slide
+if (auto) {
+  // Run next slide at interval time
+  slideInterval = setInterval(nextSlide, intervalTime);
+}
+
+    
+    return(
+    <div className="slider">
+        <div className="slide ">
+            <div className="content">
+                <h1>slide one</h1>
+                <p>Sun Glasses</p>
+            </div>
+        </div>
+
+        <div className="slide">
+            <div className="content">
+                <h1>slide two</h1>
+                <p>new one</p>
+            </div>
+        </div>
+        <div className="slide">
+            <div className="content">
+                <h1>slide three</h1>
+                <p>new one</p>
+            </div>
+        </div>
+        <div className="slide">
+            <div className="content">
+                <h1>slide four</h1>
+                <p>new one</p>
+            </div>
+            </div>
+        <div className="slide current">
+            <div className="content">
+                <h1>slide five</h1>
+                <p>new one</p>
+          </div>
+            
+            <div className="buttons">
+                <button id="prev"><i className="fas fa-arrow-left"></i></button>
+                <button id="next"><i className="fas fa-arrow-right"></i></button>
+
+            </div>
+        </div>
+           
+        
     </div>)
 }
 

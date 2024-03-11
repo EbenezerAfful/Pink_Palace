@@ -1,0 +1,104 @@
+.slider{
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+
+
+.slide{
+    
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    padding: -150px;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    
+
+}
+
+.buttons button#next{
+    position: absolute;
+    top: 230px;
+    right: 15px;
+}
+
+
+.buttons button#prev{
+    position: absolute;
+    top: 230px;
+    left: 15px;
+}
+
+.buttons button{
+    border: 2px solid white;
+    background-color: white;
+    color:deeppink;
+    cursor: pointer;
+    padding: 13px 15px;
+    border-radius: 50%;
+    outline: none;
+}
+
+.buttons button:hover{
+    background-color: white;
+    color: black;
+}
+
+@media (max-width:500px) {
+    .slide .content{
+        bottom: -300px;
+        left: 0;
+        width: 100px;
+    }
+    .slide.current .content{
+        transform: translateY(-300px);
+    }
+}
+
+.slide.current{
+    opacity: 1;
+}
+
+.slide .content{
+    position: absolute;
+    left: -600px;
+    bottom: 70px;
+    width: 200px;
+    opacity: 0;
+    background-color:rgb(255,255,255,0.8);
+    color: rgb(86, 86, 86);
+    padding: 15px;
+
+}
+
+.slide.current .content{
+    opacity: 1;
+    transform: translateX(600px);
+    transition:all 0.7s ease-in-out 0.3s ;
+}
+
+.slide .content h1{
+    margin-bottom: 10px;
+}
+
+
+.slide:first-child{
+    background:url('../../images/sunset-1283872_640.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(2){
+    background:url('../../images/fbda075dea9a684fc51aaeddbc7790ef.jpg') no-repeat center top/cover;
+}
+.slide:nth-child(3){
+    background:url('../../images/istockphoto-691910455-1024x1024.jpg') no-repeat center top/cover;
+}
+.slide:nth-child(4){
+    background:url('../../images/istockphoto-615901832-1024x1024.jpg') no-repeat center top/cover;
+}
+.slide:nth-child(5){
+    background:url('../../images/istockphoto-1399395748-1024x1024.jpg') no-repeat center top/cover;
+}

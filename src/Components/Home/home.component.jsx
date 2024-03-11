@@ -1,8 +1,9 @@
 import BasicSlider from "./basicslider";
+import './home.styles.css'
 
 const Home=()=>{
-    return( <div>
-    <BasicSlider/>
+    return( <div className="home">
+        <BasicSlider/>
     </div>    
     )
 }
