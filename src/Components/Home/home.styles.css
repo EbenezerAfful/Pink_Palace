@@ -2,8 +2,11 @@
     position: relative;
     overflow: hidden;
     width: 100vw;
-    height: 100vh;
-    
+    height: 45vh;
+    border:2px deeppink; ;
+    border-style: groove;
+    display: inline-flex;
+object-fit: contain;
 }
 
 
@@ -12,11 +15,12 @@
     
     position: absolute;
     width: 100%;
-    height: 70%;
+    height: 100%;
     padding: -150px;
     opacity: 0;
     transition: opacity 0.4s ease-in-out;
-    
+    object-fit: cover;
+
 
 }
 
@@ -48,16 +52,6 @@
     color: black;
 }
 
-@media (max-width:500px) {
-    .slide .content{
-        bottom: -300px;
-        left: 0;
-        width: 100px;
-    }
-    .slide.current .content{
-        transform: translateY(-300px);
-    }
-}
 
 .slide.current{
     opacity: 1;
@@ -102,3 +96,51 @@
 .slide:nth-child(5){
     background:url('../../images/istockphoto-1399395748-1024x1024.jpg') no-repeat center top/cover;
 }
+
+
+.advert{
+    align-items: center;
+    position: relative;
+    width: 450px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    border: 5px solid black;
+    border-style: none;
+    background-color: burlywood;
+    margin-left: 10px;
+    margin-top: 50px;}
+
+
+.advertisement{
+align-items: center;
+display: flex;
+justify-content: space-evenly;}
+
+
+
+.home-items{
+ align-items: center;
+display: block;
+justify-content: space-evenly;
+margin-top: 100px;
+margin-left: 30px;
+
+}
+
+.items{
+    align-items: center;
+    position: relative;
+    width: 200px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    border: 5px solid black;
+    border-style: none;
+    background-color: burlywood;
+    margin-left: 10px;
+    margin-top: 10px;}
+
+
+
+
