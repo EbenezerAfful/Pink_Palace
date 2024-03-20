@@ -1,18 +1,25 @@
 *{
     padding: 0%;
     margin: 0%;
+    
 }
 
-
+.nav{
+    box-shadow: 0 10px 25px grey ;
+    width: 100%;
+    position: relative;
+}
 
 .nav-bar{
     display: flex;
+    position: relative;
     margin-top: auto;
     align-items: center;
     justify-content: space-between;
     background-color:white;
     padding: 20px 80px;
-    box-shadow:0 5px 15px rgb(rgb(0, 0, 0), rgb(0, 0, 0), rgb(248, 248, 249))
+    box-shadow:0 5px 15px rgb(rgb(0, 0, 0), rgb(0, 0, 0), rgb(248, 248, 249));
+    
 
 }
 
@@ -22,21 +29,16 @@
     color:white;
     background-color: deeppink;
     display: flex;
-    position: relative;
-    
-    
-    
-    
+    position: relative;} 
 
-} 
-
-.header{color: deeppink;
-font-family: "Sacramento", cursive;
-font-size: 75px;
+  /* .header{color: deeppink;
+   font-family: "Sacramento", cursive;
+   font-size: 75px;
 font-weight: 60;
 position:absolute;
 left: 30.0rem;
-}
+
+} */
 
 
 

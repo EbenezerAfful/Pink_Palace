@@ -1,18 +1,39 @@
-.image-styles{
-  position: absolute;
-  top:10%;
-  justify-content: space-between;
-  display: flex;
-}
+
+
 
 .container{
-    justify-content: space-between;
+    justify-content: center;
     display: flex;
-    
-}
+    margin: 10px;
+    align-items: center;
+  }
+
+  .link-container{
+    position:absolute;
+    display: flex;
+    border: 5px solid;
+    border-style: hidden;
+    background-color: whitesmoke;
+    box-shadow: 0 5px 15px deeppink ;
+    width: 800px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 25px;
+    cursor: pointer;
+    -moz-osx-font-smoothing: grayscale;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    transition: transform 0.25s ease-out;
+  }
 
 
-.image-container{
-    justify-content: space-between;
-    display: flex;
-}
+  .link{
+    text-decoration: none;
+    color: black;
+  }
+
+

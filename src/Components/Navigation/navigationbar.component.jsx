@@ -24,8 +24,8 @@ const NavigationBar=()=>{
     
     <div className='nav-bar'>
     <SpectacleIcon className='spectacle-styles'/>
-<div className='header'>Pink Palace
-<h2 className='sub-header'>EYEWEAR AND JEWELRY</h2>
+<div className='header'>
+<h2 className='sub-header'></h2>
 </div>
     <div className='nav-bar-links'>
        <ul className='nav-links'>

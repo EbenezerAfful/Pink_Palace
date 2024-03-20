@@ -1,0 +1,35 @@
+.search-box{
+    height: 30px;
+    width: 50%;
+    margin-top: 10px;
+    display: flex;
+    cursor: pointer;
+    border: 2px solid deeppink;
+    padding: 10px 20px;
+    background: white;
+    border-radius: 30px;
+    align-items: center;
+    margin-left: 200px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3) ;
+}
+
+.search-box:hover input{
+    width: 400px;
+}
+
+
+.search-box input{
+    width: 10px;
+    outline: none;
+    border: none;
+    transition: 0.8s;
+    font-weight: 500;
+    background: transparent;
+}
+
+
+.search-box a .fas{
+font-size: 18px;
+color: deeppink;    
+
+}

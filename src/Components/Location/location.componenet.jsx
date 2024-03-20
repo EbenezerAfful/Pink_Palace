@@ -1,30 +1,19 @@
-import REACTLOGO from '../../images/fbda075dea9a684fc51aaeddbc7790ef.jpg'
+import'./location.styles.css'
+
 import { ReactComponent as Locate } from '../../logos/location-pin-svgrepo-com.svg';
 
+import { Link } from "react-router-dom";
 
 const Location=()=>{
     return(<div className='container'>
-       <ul> 
-       <li>
-        <Locate/> <li>
-        Ashaley-Botwe School Junction 
-            </li>
-        </li>
+  <div className="link-container">
+  <Link className='link'>
+  <Locate/> ASHALEY-BOTWE SCHOOL JUNCTION  
+   </Link>
+   <div className='slides'>
 
-        </ul> 
-     
-        <div className='image-styles'>
-            <h1 className='image-container'>
-        <img  src={REACTLOGO} />
-
-        <img  src={REACTLOGO} />
-
-        <img  src={REACTLOGO} />
-
-        <img  src={REACTLOGO} />
-        
-            </h1>
-        </div>
+   </div>
+  </div>
     </div>)
 }
 
